@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fagun Patel | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>FagunPatel</h2>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content fade-in">
+        <code class="code-text"># status: constantly_learning && building_the_future</code>
+
+        <h1>
+            Turning <span>Logic</span> into Interactive
+            <span>Reality</span>.
+        </h1>
+
+        <p>"Technology is best when it brings people together."</p>
+    </div>
+</section>
+
+<!-- PROFILE -->
+<section class="profile" id="about">
+
+    <div class="profile-container fade-in">
+
+        <div class="profile-content">
+
+            <p class="intro-text">Hello, I am</p>
+
+            <h1><span>Fagun Patel</span></h1>
+
+            <h3>MCA Graduate | Backend Developer</h3>
+
+            <p class="description">
+                As an IT student specializing in Computer Applications,
+                I live at the intersection of clean code and efficient
+                architecture.
+            </p>
+
+            <div class="resume-container">
+
+                <a href="resume/Resume (1).pdf"
+                class="resume-btn"
+                download="resume/Resume (1).pdf"
+                target="_blank">
+
+                    <i class="fas fa-file-download"></i>
+                    <span>Download CV</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="profile-visual">
+            <div class="image-box">
+                <img src="images/profile.jpeg" alt="Fagun Patel">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+
+    <h2 class="fade-in">Academic Background</h2>
+
+    <div class="edu-container">
+
+        <div class="edu-card fade-in">
+
+            <div class="edu-dot"></div>
+
+            <div class="edu-content">
+
+                <div class="edu-header">
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <span class="edu-date">2024 — 2026</span>
+                </div>
+
+                <p class="univ-name">
+                    CMPICA - CHARUSAT University
+                </p>
+
+                <p class="univ-location">
+                    Changa, Gujarat
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="edu-card fade-in">
+
+            <div class="edu-dot"></div>
+
+            <div class="edu-content">
+
+                <div class="edu-header">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <span class="edu-date">2021 — 2024</span>
+                </div>
+
+                <p class="univ-name">
+                    Veer Narmad South Gujarat University
+                </p>
+
+                <p class="univ-location">
+                    Surat, Gujarat
+                </p>
+
+            </div>
+
+        </div>
+        <div class="edu-card fade-in">
+            <div class="edu-dot"></div>
+
+            <div class="edu-content">
+
+                <div class="edu-header">
+                    <h3>Higher Secondary Certificate (HSC)</h3>
+                    <span class="edu-date">2019 — 2021</span>
+                </div>
+
+                <p class="univ-name">GSEB Board</p>
+
+                <p class="univ-location">Surat, Gujarat</p>
+
+                <p class="edu-specialization">
+                    Commerce Stream
+                </p>
+
+            </div>
+        </div>
+
+        <div class="edu-card fade-in">
+
+            <div class="edu-dot"></div>
+
+            <div class="edu-content">
+
+                <div class="edu-header">
+                    <h3>Secondary School Certificate (SSC)</h3>
+                    <span class="edu-date">2018 — 2019</span>
+                </div>
+
+                <p class="univ-name">GSEB Board</p>
+
+                <p class="univ-location">Surat, Gujarat</p>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+
+    <h2>Technical Stack</h2>
+
+    <div class="skills-container fade-in">
+
+        <div class="skill">PHP / Laravel</div>
+        <div class="skill">Python / Django</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">REST APIs</div>
+        <div class="skill">Git / GitHub</div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+
+    <h2 class="fade-in">Selected Projects</h2>
+
+    <div class="filter-menu fade-in">
+
+        <button class="filter-btn active"
+        data-filter="all">All Projects</button>
+
+        <button class="filter-btn"
+        data-filter="laravel">Laravel</button>
+
+        <button class="filter-btn"
+        data-filter="django">Python (Django)</button>
+
+    </div>
+
+           </h1>
+<div class="project-container fade-in">
+
+    <!-- PROJECT 1 -->
+    <div class="dev-card show" data-category="laravel">
+
+        <div class="card-meta">
+
+            <span class="status-indicator live"></span>
+
+            <span class="project-id">
+                #001_Festivo_v1.0
+            </span>
+
+            <a href="https://github.com/fagun2003/Festivo-Events.git" class="git-icon">
+                <i class="fab fa-github"></i>
+            </a>
+
+        </div>
+
+        <h3>Festivo Events</h3>
+
+        <p>
+            Automated event management platform featuring
+            real-time scheduling and secure vendor dashboards.
+        </p>
+
+        <div class="tech-badges">
+
+            <span>Laravel 10</span>
+            <span>MySQL</span>
+            <span>Blade</span>
+            <span>Admin Panel</span>
+
+        </div>
+
+        <a href="https://github.com/fagun2003/Festivo-Events.git" class="view-details">
+            Explore Architecture
+            <span>&rarr;</span>
+        </a>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="dev-card show" data-category="laravel">
+
+        <div class="card-meta">
+
+            <span class="status-indicator live"></span>
+
+            <span class="project-id">
+                #002_CarryOnn_v2.1
+            </span>
+
+            <a href="https://github.com/fagun2003/CarryOnn.git" class="git-icon">
+                <i class="fab fa-github"></i>
+            </a>
+
+        </div>
+
+        <h3>Carry Onn</h3>
+
+        <p>
+            Premium e-commerce ecosystem with optimized
+            checkout flows and custom cart management logic.
+        </p>
+
+        <div class="tech-badges">
+
+            <span>Laravel</span>
+            <span>PHP 8.2</span>
+            <span>Stripe API</span>
+            <span>Eloquent</span>
+
+        </div>
+
+        <a href="https://github.com/fagun2003/CarryOnn.git" class="view-details">
+            View Repository
+            <span>&rarr;</span>
+        </a>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="dev-card show" data-category="django">
+
+        <div class="card-meta">
+
+            <span class="status-indicator live"></span>
+
+            <span class="project-id">
+                #003_Interiors_v1.4
+            </span>
+
+            <a href="https://github.com/fagun2003/Innovative-Interiors.git" class="git-icon">
+                <i class="fab fa-github"></i>
+            </a>
+
+        </div>
+
+        <h3>Innovative Interiors</h3>
+
+        <p>
+            Interior design showcase utilizing Django's
+            MVT architecture with a gallery-centric UI.
+        </p>
+
+        <div class="tech-badges">
+
+            <span>Python</span>
+            <span>Django</span>
+            <span>SQLite</span>
+            <span>MVT</span>
+
+        </div>
+
+        <a href="https://github.com/fagun2003/Innovative-Interiors.git" class="view-details">
+            Explore System
+            <span>&rarr;</span>
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2>Let's Connect</h2>
+
+    <div class="contact-info fade-in">
+
+        <p>
+            Currently seeking
+            <strong>Backend Developer</strong>
+            opportunities.
+        </p>
+
+        <div class="contact-links">
+            <p><strong>Email:</strong> fagunved19@gmail.com</p>
+            <p><strong>GitHub:</strong> https://github.com/fagun2003</p>
+        </div>
+
+    </div>
+
+    <!-- STATIC FORM -->
+    <form id="contact-form" class="fade-in">
+
+        <input type="text"
+        name="name"
+        placeholder="Your Name"
+        required>
+
+        <input type="email"
+        name="email"
+        placeholder="Your Email"
+        required>
+
+        <textarea
+        name="message"
+        placeholder="Your Message"
+        required></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<!-- JS -->
+<script>
+
+    // SCROLL ANIMATION
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+
+        });
+
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in')
+    .forEach(el => observer.observe(el));
+
+</script>
+
+<script>
+
+    // FILTER PROJECTS
+
+    const filterButtons =
+    document.querySelectorAll('.filter-btn');
+
+    const projectCards =
+    document.querySelectorAll('.dev-card');
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener('click', () => {
+
+            filterButtons.forEach(btn =>
+            btn.classList.remove('active'));
+
+            button.classList.add('active');
+
+            const filterValue =
+            button.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+
+                const cardCategory =
+                card.getAttribute('data-category');
+
+                if (
+                    filterValue === 'all' ||
+                    filterValue === cardCategory
+                ) {
+
+                    card.classList.remove('hide');
+                    card.classList.add('show');
+
+                } else {
+
+                    card.classList.remove('show');
+                    card.classList.add('hide');
+
+                }
+
+            });
+
+        });
+
+    });
+
+</script>
+
+<script>
+
+    // MOBILE MENU CLOSE
+
+    const menuToggle =
+    document.getElementById('menu-toggle');
+
+    const navLinks =
+    document.querySelectorAll('.nav-links li a');
+
+    navLinks.forEach(link => {
+
+        link.addEventListener('click', () => {
+            menuToggle.checked = false;
+        });
+
+    });
+
+</script>
+<script>
+
+    
+
+emailjs.init("zmWYUoCOl-yYlINTx");
+
+document
+.getElementById("contact-form")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    emailjs.sendForm(
+        "service_svi179n",
+        "template_rhmyimg",
+        this
+    )
+
+    .then(function() {
+
+        alert("Message Sent Successfully!");
+
+        document
+        .getElementById("contact-form")
+        .reset();
+
+    })
+
+    .catch(function(error) {
+
+        alert("Failed to Send Message!");
+
+        console.log(error);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
